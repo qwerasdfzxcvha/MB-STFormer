@@ -2,7 +2,7 @@
 
 ## Architecture
 
-## ![模型结构图](./Figures/MB_STFormer.JPG)
+## ![模型结构图](./Figures/MB_STFormer.jpg)
 
 The model comprises four modules. (1)The multi-Band Feature Extraction module, which employs multi-scale convolutions, optimized for individual frequency bands, to extract spatial and temporal features. This approach preserves inter-band dynamics, enabling a comprehensive representation of EEG signals. (2) The Efficient Attention module, which adaptively balances fine-grained local details with global context to integrate the extracted multi-band features. (3) The LogPower module, which computes the logarithmic power of temporal features to enhance the stability and discriminability of neural representations by suppressing amplitude variance and highlighting oscillatory energy patterns across channels. (4) The Classifier module, which flattens and aggregates the hierarchical features into a low-dimensional representation and applies fully connected layers to output the predicted fatigue state.
 
